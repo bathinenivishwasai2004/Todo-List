@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    justify-content: center; /* Horizontal center */
+    align-items: center;     /* Vertical center */
+    min-height: 100vh;
+    margin: 0;
+}
+.container {
+    border: 2px solid black;
+    border-radius: 12px;
+    height: 400px;
+    width: 400px;
+    background-color:#F5F5F5;
+}
+
+
+.addTask {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+#taskInput {
+    flex: 1;
+    min-width: 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+}
+
+#taskInput:focus {
+    border-color: #6366f1;
+}
+
+.AddButton {
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 8px;
+    background-color: #6366f1;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.AddButton:hover {
+    background-color: #4f46e5;
+}
+
+.taskItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0px 15px;
+    width: 350px;
+    margin: 10px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+}
+.TaskDone {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.TaskDone:hover {
+    background-color: #dc2626;
+}
+
+.complete{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.editButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: #e50101;
+    border: none;
+    padding: 8px;
+    border-radius: 12px;
+    cursor: pointer;
+}
